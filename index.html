@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falkasoft</title>
+    <!-- Modern Font: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css?v=14">
+</head>
+
+<body>
+    <!-- Language Selection Modal -->
+    <div id="language-modal" class="language-modal">
+        <div class="lang-modal-content glass-panel">
+            <h2>Select Your Language<br><span>Dilinizi Seçin</span></h2>
+            <div class="lang-options">
+                <button class="lang-btn" data-lang="tr">
+                    <span class="flag">🇹🇷</span> Türkçe
+                </button>
+                <button class="lang-btn" data-lang="en">
+                    <span class="flag">🇬🇧</span> English
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Premium Interactive Background Global Glow -->
+    <div id="global-glow"></div>
+    <!-- Dynamic Scroll Gradient -->
+    <div class="bg-gradient-scroll" id="bg-scroll-layer"></div>
+
+    <!-- Animated Background Elements -->
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+    <div class="bg-shape shape-3"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Falkasoft<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home" data-tr="Ana Sayfa" data-en="Home">Ana Sayfa</a></li>
+                <li><a href="#about" data-tr="Hakkımızda" data-en="About Us">Hakkımızda</a></li>
+                <li><a href="#skills" data-tr="Yetenekler" data-en="Skills">Yetenekler</a></li>
+                <li><a href="#projects" data-tr="Projeler" data-en="Projects">Projeler</a></li>
+                <li><a href="#contact" class="btn-contact" data-tr="İletişim" data-en="Contact">İletişim</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="nav-lang-toggle" class="lang-toggle-nav">
+                    <span class="current-lang">TR</span>
+                    <i class="fas fa-globe"></i>
+                </button>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header / Hero Section -->
+    <header id="home" class="hero section">
+        <div class="hero-content">
+            <span class="greeting" data-tr="Hoş Geldiniz" data-en="Welcome">Hoş Geldiniz</span>
+            <h1 class="name">Falkasoft</h1>
+            <h2 class="title"><span class="typing-text"></span><span class="cursor">&nbsp;</span></h2>
+            <p class="description"
+                data-tr="Yaratıcı tasarımlar ve modern web teknolojileri ile kullanıcı odaklı dijital deneyimler geliştirir. Fikirleri yenilikçi yazılımlarla hayata geçirir."
+                data-en="Develops user-centric digital experiences with creative designs and modern web technologies. Brings ideas to life with innovative software.">
+                Yaratıcı tasarımlar ve modern web teknolojileri ile kullanıcı odaklı dijital deneyimler geliştirir.
+                Fikirleri yenilikçi yazılımlarla hayata geçirir.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary" data-tr="Projelerimizi Gör"
+                    data-en="View Our Projects">Projelerimizi Gör</a>
+                <a href="CV.pdf" class="btn btn-outline" download
+                    data-tr="<i class='fas fa-download'></i> Kurumsal Tanıtım İndir"
+                    data-en="<i class='fas fa-download'></i> Download Corporate Profile"><i class="fas fa-download"></i>
+                    Kurumsal Tanıtım
+                    İndir</a>
+            </div>
+
+            <div class="social-links-hero">
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+
+        <div class="hero-image-container">
+            <div class="hero-image-wrapper glass-panel">
+                <div class="hero-logo-slider">
+                    <img src="images/logo1.png" alt="App Logo 1" class="slide active">
+                    <img src="images/logo2.png" alt="App Logo 2" class="slide">
+                    <img src="images/logo3.png" alt="App Logo 3" class="slide">
+                </div>
+            </div>
+
+            <div class="hero-slider-text">
+                <div class="slide-text active">
+                    <h4>Fiva</h4>
+                    <p data-tr="Yeni insanlarla arkadaşlık kurmanızı ve eşsiz bağlar yaratmanızı sağlar."
+                        data-en="Allows you to make friends with new people and create unique bonds.">Yeni insanlarla
+                        arkadaşlık kurmanızı ve eşsiz bağlar yaratmanızı sağlar.</p>
+                </div>
+                <div class="slide-text">
+                    <h4>Falvia</h4>
+                    <p data-tr="Günlük burç yorumları, tarot ve kahve falı deneyimi avucunuzun içinde."
+                        data-en="Daily horoscope readings, tarot, and coffee fortune telling experience right in your palm.">
+                        Günlük burç yorumları, tarot ve kahve falı deneyimi avucunuzun içinde.</p>
+                </div>
+                <div class="slide-text">
+                    <h4>Falcore</h4>
+                    <p data-tr="Günlük alışkanlıklarınızı takip edin ve verimliliğinizi zirveye taşıyın."
+                        data-en="Track your daily habits and take your productivity to the peak.">Günlük
+                        alışkanlıklarınızı takip edin ve verimliliğinizi zirveye taşıyın.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-down">
+            <a href="#about"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </header>
+
+    <!-- Hakkımızda Section -->
+    <section id="about" class="section">
+        <h2 class="section-title" data-tr="Hakkımızda<span>.</span>" data-en="About Us<span>.</span>">
+            Hakkımızda<span>.</span></h2>
+        <div class="about-container glass-panel">
+            <div class="about-text">
+                <h3>Falkasoft</h3>
+                <p data-tr="Falkasoft, dijital ürün geliştirme, yazılım mühendisliği ve modern uygulama tasarımı alanlarında faaliyet gösteren bağımsız bir yazılım girişimidir. Kullanıcı odaklı, performanslı ve ölçeklenebilir yazılım çözümleri geliştirme vizyonuyla hareket etmektedir."
+                    data-en="Falkasoft is an independent startup operating in digital product development, software engineering, and modern app design. We act with the vision of developing user-centric, performant, and scalable software solutions.">
+                    Falkasoft, dijital ürün geliştirme, yazılım mühendisliği ve modern uygulama tasarımı
+                    alanlarında faaliyet gösteren bağımsız bir yazılım girişimidir. Kullanıcı odaklı, performanslı ve
+                    ölçeklenebilir yazılım çözümleri geliştirme vizyonuyla hareket etmektedir.
+                </p>
+                <p data-tr="Temel odak noktası; sadece çalışan sistemler oluşturmak değil, aynı zamanda güçlü bir kullanıcı deneyimi, sürdürülebilir mimari ve modern tasarım anlayışıyla birleşen dijital ürünler ortaya koymaktır. Gerçek dünya ihtiyaçlarına çözüm üretirken teknik mükemmeliyet ve estetik kaliteyi bir araya getirir."
+                    data-en="Our core focus is not just building working systems, but creating digital products that combine a strong user experience, sustainable architecture, and a modern design approach. We bring technical excellence and aesthetic quality together while solving real-world needs.">
+                    Temel odak noktası; sadece çalışan sistemler oluşturmak değil, aynı zamanda güçlü bir kullanıcı
+                    deneyimi, sürdürülebilir mimari ve modern tasarım anlayışıyla birleşen dijital ürünler ortaya
+                    koymaktır. Gerçek dünya ihtiyaçlarına çözüm üretirken teknik mükemmeliyet ve estetik kaliteyi bir
+                    araya getirir.
+                </p>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-num">3+</span>
+                        <span class="stat-text" data-tr="Yıllık Deneyim" data-en="Years Experience">Yıllık
+                            Deneyim</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">15+</span>
+                        <span class="stat-text" data-tr="Tamamlanan Proje" data-en="Projects Done">Tamamlanan
+                            Proje</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">5+</span>
+                        <span class="stat-text" data-tr="Mutlu Müşteri" data-en="Happy Clients">Mutlu Müşteri</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-timeline">
+                <div class="timeline-item">
+                    <span class="year" data-tr="2025 - Günümüz" data-en="2025 - Present">2025 - Günümüz</span>
+                    <h4 data-tr="Bağımsız Geliştirici" data-en="Independent App Developer">Independent App Developer
+                    </h4>
+                </div>
+                <div class="timeline-item">
+                    <span class="year">2024 - 2025</span>
+                    <h4 data-tr="Mobil Uygulama Geliştirme" data-en="Mobile App Development">Mobile App Development</h4>
+                </div>
+                <div class="timeline-item">
+                    <span class="year">2023 - 2024</span>
+                    <h4 data-tr="Web Geliştirme" data-en="Web Development">Web Development</h4>
+                </div>
+                <div class="timeline-item">
+                    <span class="year">2022 - 2023</span>
+                    <h4 data-tr="Yazılım Geliştirme Serüveni Başlangıcı" data-en="Software Development Journey Started">
+                        Software Development Journey Started</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Yetenekler Section -->
+    <section id="skills" class="section">
+        <h2 class="section-title" data-tr="Yetenekler<span>.</span>" data-en="Skills<span>.</span>">
+            Yetenekler<span>.</span></h2>
+        <div class="skills-container" style="display: block;">
+            <div class="skills-category glass-panel">
+                <h3>Uzmanlık Alanları</h3>
+                <div class="skills-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+                    <div class="skill-item">
+                        <i class="fas fa-mobile-screen" style="color: #8b5cf6;"></i>
+                        <span data-tr="Mobil Uygulama Geliştirme" data-en="Mobile App Development">Mobil Uygulama
+                            Geliştirme</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-laptop-code" style="color: #06b6d4;"></i>
+                        <span data-tr="Web Uygulaması Geliştirme" data-en="Web App Development">Web Uygulaması
+                            Geliştirme</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-palette" style="color: #ec4899;"></i>
+                        <span data-tr="UI/UX Odaklı Ürün Tasarımı" data-en="UI/UX Focused Product Design">UI/UX Odaklı
+                            Ürün Tasarımı</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-layer-group" style="color: #f59e0b;"></i>
+                        <span data-tr="Modern Frontend Mimarisi" data-en="Modern Frontend Architecture">Modern Frontend
+                            Mimarisi</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-server" style="color: #10b981;"></i>
+                        <span data-tr="Backend Sistem Tasarımı" data-en="Backend System Design">Backend Sistem
+                            Tasarımı</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-database" style="color: #3b82f6;"></i>
+                        <span data-tr="Veritabanı Mimarisi ve Yönetimi"
+                            data-en="Database Architecture & Management">Veritabanı Mimarisi ve Yönetimi</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-object-group" style="color: #f43f5e;"></i>
+                        <span data-tr="Dijital Ürün Geliştirme ve Prototipleme"
+                            data-en="Digital Product Development & Prototyping">Dijital Ürün Geliştirme ve
+                            Prototipleme</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projeler Section -->
+    <section id="projects" class="section">
+        <h2 class="section-title" data-tr="Öne Çıkan Projelerimiz<span>.</span>"
+            data-en="Featured Projects<span>.</span>">Öne Çıkan Projelerimiz<span>.</span></h2>
+        <div class="projects-grid">
+
+            <!-- Proje Kartı 1 -->
+            <div class="project-card glass-panel">
+                <div class="project-img-wrapper">
+                    <img src="images/projects/fiva.png" alt="Dating App Projesi">
+                    <div class="project-overlay">
+                        <a href="#" class="overlay-btn" target="_blank"
+                            data-tr="<i class='fas fa-external-link-alt'></i> İncele"
+                            data-en="<i class='fas fa-external-link-alt'></i> View"><i
+                                class="fas fa-external-link-alt"></i>
+                            İncele</a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category" data-tr="Mobil Uygulama" data-en="Mobile App">Mobil Uygulama</span>
+                    <h3>Fiva</h3>
+                    <p data-tr="Kullanıcıların yeni kişilerle tanışmasını ve bağlantı kurmasını sağlayan, modern tasarımlı ve gerçek zamanlı mesajlaşma özellikli eşleştirme uygulaması."
+                        data-en="A matchmaking app featuring a modern design and real-time messaging that allows users to meet and connect with new people.">
+                        Kullanıcıların yeni kişilerle tanışmasını ve bağlantı kurmasını sağlayan, modern tasarımlı ve
+                        gerçek zamanlı mesajlaşma özellikli eşleştirme uygulaması.</p>
+                    <div class="project-tags">
+                        <span>React Native</span>
+                        <span>Node.js</span>
+                        <span>Socket.io</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proje Kartı 2 -->
+            <div class="project-card glass-panel">
+                <div class="project-img-wrapper">
+                    <img src="images/projects/falvia.png" alt="Fal Uygulaması Projesi">
+                    <div class="project-overlay">
+                        <a href="#" class="overlay-btn" target="_blank"
+                            data-tr="<i class='fas fa-external-link-alt'></i> İncele"
+                            data-en="<i class='fas fa-external-link-alt'></i> View"><i
+                                class="fas fa-external-link-alt"></i>
+                            İncele</a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category" data-tr="Mobil Uygulama" data-en="Mobile App">Mobil Uygulama</span>
+                    <h3>Falvia</h3>
+                    <p data-tr="Kullanıcılara günlük burç yorumları, tarot ve kahve falı deneyimi sunan estetik ve eğlence odaklı mobil uygulama."
+                        data-en="An aesthetic and entertainment-focused mobile app offering daily horoscopes, tarot, and coffee cup readings.">
+                        Kullanıcılara günlük burç yorumları, tarot ve kahve falı deneyimi sunan estetik ve eğlence
+                        odaklı
+                        mobil uygulama.</p>
+                    <div class="project-tags">
+                        <span>Mobil UI/UX</span>
+                        <span>API Entegrasyonu</span>
+                        <span>React Native</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proje Kartı 3 -->
+            <div class="project-card glass-panel">
+                <div class="project-img-wrapper">
+                    <img src="images/projects/kelime.png" alt="Kelime Oyunu Projesi">
+                    <div class="project-overlay">
+                        <a href="#" class="overlay-btn" target="_blank"
+                            data-tr="<i class='fas fa-external-link-alt'></i> İncele"
+                            data-en="<i class='fas fa-external-link-alt'></i> View"><i
+                                class="fas fa-external-link-alt"></i>
+                            İncele</a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category" data-tr="Oyun & Eğlence" data-en="Gaming & Entertainment">Oyun &
+                        Eğlence</span>
+                    <h3>Kelime Oyunu</h3>
+                    <p data-tr="Kelime dağarcığını geliştiren, zihin açıcı mini görevler ve günlük seriler barındıran sürükleyici zeka oyunu."
+                        data-en="An immersive puzzle game that improves vocabulary, featuring mind-opening mini-tasks and daily streaks.">
+                        Kelime dağarcığını geliştiren, zihin açıcı mini görevler ve günlük seriler barındıran
+                        sürükleyici
+                        zeka oyunu.</p>
+                    <div class="project-tags">
+                        <span>Oyun Mekaniği</span>
+                        <span>Animasyon</span>
+                        <span>Gamification</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proje Kartı 4 -->
+            <div class="project-card glass-panel">
+                <div class="project-img-wrapper">
+                    <img src="images/projects/falcore.png" alt="Kişisel Gelişim Projesi">
+                    <div class="project-overlay">
+                        <a href="#" class="overlay-btn" target="_blank"
+                            data-tr="<i class='fas fa-external-link-alt'></i> İncele"
+                            data-en="<i class='fas fa-external-link-alt'></i> View"><i
+                                class="fas fa-external-link-alt"></i>
+                            İncele</a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category" data-tr="Sağlık & Yaşam" data-en="Health & Lifestyle">Sağlık &
+                        Yaşam</span>
+                    <h3>Falcore & FalLife</h3>
+                    <p data-tr="Kullanıcıların günlük alışkanlıklarını takip etmesini, motivasyonlarını artırmasını ve hedeflerine ulaşmasını kolaylaştıran verimlilik araçları."
+                        data-en="Productivity tools that help users track their daily habits, increase their motivation, and reach their goals easily.">
+                        Kullanıcıların günlük alışkanlıklarını takip etmesini, motivasyonlarını artırmasını ve
+                        hedeflerine ulaşmasını kolaylaştıran verimlilik araçları.</p>
+                    <div class="project-tags">
+                        <span>Verimlilik</span>
+                        <span>Dashboard</span>
+                        <span>UX Research</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="more-projects">
+            <a href="#" class="btn btn-outline" data-tr="Tüm Projelerimizi GitHub'da Gör"
+                data-en="View All Projects on GitHub">Tüm Projelerimizi GitHub'da Gör</a>
+        </div>
+    </section>
+
+    <!-- İletişim Section -->
+    <section id="contact" class="section">
+        <h2 class="section-title" data-tr="Bizimle İletişime Geçin<span>.</span>" data-en="Contact Us<span>.</span>">
+            Bizimle İletişime Geçin<span>.</span></h2>
+        <div class="contact-container glass-panel">
+            <div class="contact-info">
+                <h3 data-tr="Bir projeniz mi var?" data-en="Have a project?">Bir projeniz mi var?</h3>
+                <p data-tr="Yeni fırsatlara ve iş birliklerine her zaman açığız. Bir fikriniz varsa veya projenizi hayata geçirmek isterseniz bize ulaşabilirsiniz."
+                    data-en="We are always open to new opportunities and collaborations. If you have an idea or want to bring your project to life, you can contact us.">
+                    Yeni fırsatlara ve iş birliklerine her zaman açığız. Bir fikriniz varsa veya projenizi hayata
+                    geçirmek isterseniz bize ulaşabilirsiniz.</p>
+
+                <div class="contact-cards">
+                    <div class="contact-card">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p>0541 473 87 00</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4 data-tr="E-Posta" data-en="E-Mail">E-Posta</h4>
+                            <p>falkasoft@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Falkasoft<span>.</span></div>
+            <p data-tr="&copy; 2026 Tüm Hakları Saklıdır." data-en="&copy; 2026 All Rights Reserved.">&copy; 2026 Tüm
+                Hakları Saklıdır.</p>
+            <div class="social-links-footer">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="js/main.js?v=14"></script>
+</body>
+
+</html>
